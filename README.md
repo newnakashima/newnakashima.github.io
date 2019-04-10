@@ -1,1 +1,0 @@
-# newnakashima.github.io

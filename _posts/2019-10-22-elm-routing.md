@@ -7,7 +7,7 @@ categories: Elm
 
 Elmで複数のページがあるSPA的なのを作りたいと思って公式のチュートリアルを読んでみた。
 
-https://guide.elm-lang.org/webapps/url_parsing.html
+[https://guide.elm-lang.org/webapps/url_parsing.html](https://guide.elm-lang.org/webapps/url_parsing.html)
 
 パーサーの作り方は載っているのだが、肝心の使い方については、「TODO」の悲しい４文字。。。
 
@@ -15,7 +15,7 @@ https://guide.elm-lang.org/webapps/url_parsing.html
 
 ## 元となるファイル
 
-https://guide.elm-lang.org/webapps/navigation.html
+[https://guide.elm-lang.org/webapps/navigation.html](https://guide.elm-lang.org/webapps/navigation.html)
 
 上記のページに載っているソースコードを元に改造する。
 
@@ -123,7 +123,7 @@ viewLink path =
 
 そこで、さっきもはったURLパースのやり方を書いてるページを参考にコードに書き足していく。
 
-https://guide.elm-lang.org/webapps/url_parsing.html
+[https://guide.elm-lang.org/webapps/url_parsing.html](https://guide.elm-lang.org/webapps/url_parsing.html)
 
 URLを見る限り、ホーム、プロフィール、レビューの三種類があるようだ。
 
@@ -152,7 +152,7 @@ routeParser =
 
 公式のチュートリアルに書いてあるのはここまでだけど、実際にURLをパースするには下記のような関数を書く。
 
-参考: https://package.elm-lang.org/packages/elm/url/latest/Url-Parser#parse
+参考: [https://package.elm-lang.org/packages/elm/url/latest/Url-Parser#parse](https://package.elm-lang.org/packages/elm/url/latest/Url-Parser#parse)
 
 ```
 toRoute : String -> Route

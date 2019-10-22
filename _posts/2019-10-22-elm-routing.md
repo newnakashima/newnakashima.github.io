@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "elm-routing"
+title:  "Elm初心者がURLルーティングを頑張ってみた結果"
 date:   2019-10-22 22:14:00 +0900
 categories: Elm
 ---

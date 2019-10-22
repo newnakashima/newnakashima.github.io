@@ -19,7 +19,7 @@ Elmで複数のページがあるSPA的なのを作りたいと思って公式�
 
 上記のページに載っているソースコードを元に改造する。
 
-```
+```elm
 import Browser
 import Browser.Navigation as Nav
 import Html exposing (..)
@@ -127,7 +127,7 @@ viewLink path =
 
 URLを見る限り、ホーム、プロフィール、レビューの三種類があるようだ。
 
-```
+```elm
 -- import 文を追加する
 
 import Url.Parser exposing (Parser, parse, (</>), map, oneOf, s, string, top)
@@ -154,7 +154,7 @@ routeParser =
 
 参考: [https://package.elm-lang.org/packages/elm/url/latest/Url-Parser#parse](https://package.elm-lang.org/packages/elm/url/latest/Url-Parser#parse)
 
-```
+```elm
 toRoute : String -> Route
 toRoute string =
   case Url.fromString string of
@@ -166,7 +166,7 @@ toRoute string =
 
 さらに、現在の状態をmodelで保持できるようにする。
 
-```
+```elm
 type Page
   = HomePage
   | ProfilePage
@@ -185,7 +185,7 @@ init flags url key =
 
 そしてURLが更新されたタイミングでURLをパースするようにupdateを修正。
 
-```
+```elm
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
   case msg of
@@ -221,7 +221,7 @@ update msg model =
 
 あとはページの種類によって内容を切り替える。
 
-```
+```elm
 view : Model -> Browser.Document Msg
 view model =
   { title = "URL Interceptor"
@@ -248,7 +248,7 @@ view model =
 
 最終的なソースは下記のようになった。
 
-```
+```elm
 import Browser
 import Browser.Navigation as Nav
 import Html exposing (..)
